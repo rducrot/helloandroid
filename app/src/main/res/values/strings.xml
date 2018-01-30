@@ -4,6 +4,8 @@
     <string name="udacity">Udacity</string>
     <string name="address">2465 Latham St\nMountain View, CA 94043</string>
     <string name="phone">650-555-5555</string>
+    <string name="geolocation">geo:37.399900, -122.108401</string>
+    <string name="phoneCall">tel:650555555</string>
 
     <string name="message">Believe in yourself!</string>
 </resources>

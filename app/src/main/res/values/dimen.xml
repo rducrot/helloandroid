@@ -2,9 +2,13 @@
 <resources>
     <!-- Padding and margin -->
     <dimen name="mainPadding">5dp</dimen>
-    <dimen name="mainMargin">5dp</dimen>
+    <dimen name="biggerPadding">20dp</dimen>
+    <dimen name="mainMargin">8dp</dimen>
     <dimen name="biggerMargin">20dp</dimen>
-    <dimen name="largeMargin">50dp</dimen>
+    <dimen name="largeMargin">32dp</dimen>
+    <dimen name="largerMargin">50dp</dimen>
+    <dimen name="containerMargin">100dp</dimen>
+    <dimen name="containerMarginLand">45dp</dimen>
 
     <dimen name="addressRadius">5dp</dimen>
     <dimen name="addressBorder">2dp</dimen>
@@ -14,5 +18,6 @@
     <dimen name="regularTextSize">15sp</dimen>
 
     <!-- Images -->
+    <dimen name="elevation">10dp</dimen>
     <dimen name="illustrationSize">300dp</dimen>
 </resources>

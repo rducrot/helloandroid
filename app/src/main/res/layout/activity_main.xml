@@ -1,47 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    style="@style/rootView"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/rootView"
     tools:context="com.example.romain.helloandroid.MainActivity">
 
-    <RelativeLayout
-        style="@style/mainView">
+    <android.support.constraint.ConstraintLayout style="@style/mainView">
 
-    <ImageView
-        android:src="@drawable/udacity_logo"
-        style="@style/logoImage"/>
+        <ImageView
+            android:id="@+id/logoImage"
+            style="@style/logoImage"
+            android:src="@drawable/udacity_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            style="@style/addressContainer">
+            style="@style/addressContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/logoImage">
 
             <TextView
-                android:text="@string/udacity"
-                style="@style/nameText"/>
+                style="@style/nameText"
+                android:text="@string/udacity" />
 
-            <LinearLayout
-                style="@style/contact_container">
-
-                <TextView
-                    style="@style/contactText"
-                    android:text="@string/address"/>>
+            <LinearLayout style="@style/contact_container">
 
                 <TextView
+                    android:id="@+id/address"
                     style="@style/contactText"
-                    android:text="@string/phone"/>
+                    android:text="@string/address"
+                    android:drawableLeft="@drawable/address"/>
+
+                <TextView
+                    android:id="@+id/phone"
+                    style="@style/contactText"
+                    android:text="@string/phone"
+                    android:drawableLeft="@drawable/phone"/>
             </LinearLayout>
         </LinearLayout>
 
-        <RelativeLayout
-            style="@style/illustrationContainer">
+        <ImageView
+            android:id="@+id/illustrationImage"
+            style="@style/illustrationImage"
+            android:src="@drawable/illustration"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
-            <ImageView
-                style="@style/illustrationImage"
-                android:src="@drawable/illustration"/>
-
-            <TextView
-                style="@style/illustrationText"
-                android:text="@string/message"/>
-        </RelativeLayout>
-    </RelativeLayout>
+        <TextView
+            style="@style/illustrationText"
+            android:text="@string/message"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/illustrationImage" />
+    </android.support.constraint.ConstraintLayout>
 </ScrollView>
